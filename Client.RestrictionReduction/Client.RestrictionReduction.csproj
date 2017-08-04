@@ -35,7 +35,7 @@
   <ItemGroup>
     <Reference Include="Infragistics4.WebUI.Excel.v10.3, Version=10.3.20103.1013, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ExcelGenerator\ExcelGenerator\Infragistics4.WebUI.Excel.v10.3.dll</HintPath>
+      <HintPath>..\packages\Infragistics4.WebUI.Excel.v10.3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

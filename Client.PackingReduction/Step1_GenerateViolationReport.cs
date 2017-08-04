@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,26 +26,26 @@ namespace Client.PackingReduction
 
         private static void Step2(string outputFile, DataTable data)
         {
-            Output.Print(" Step 2 - Start....");
+            //Output.Print(" Step 2 - Start....");
 
-            var memoryStream = new MemoryStream();
-            Workbook wb = Excel.Write("Sheet1", data);
+            //var memoryStream = new MemoryStream();
+            //Workbook wb = Excel.Write("Sheet1", data);
 
-            wb.Save(memoryStream);
+            //wb.Save(memoryStream);
 
-            if (File.Exists(outputFile))
-            {
-                File.Delete(outputFile);
-            }
+            //if (File.Exists(outputFile))
+            //{
+            //    File.Delete(outputFile);
+            //}
 
-            using (FileStream fileStream = new FileStream(outputFile, FileMode.OpenOrCreate, FileAccess.ReadWrite))
-            {
-                memoryStream.WriteTo(fileStream);
-            }
+            //using (FileStream fileStream = new FileStream(outputFile, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            //{
+            //    memoryStream.WriteTo(fileStream);
+            //}
 
-            Console.WriteLine(".... New excel file has been created at " + outputFile + ".");
+            //Console.WriteLine(".... New excel file has been created at " + outputFile + ".");
 
-            Output.Print(" Step 2 - End!");
+            //Output.Print(" Step 2 - End!");
         }
 
     }
